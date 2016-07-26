@@ -118,18 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppPushFailure" xml:space="preserve">
-    <value>App push failure by invoking Api</value>
+    <value>信息推送失败</value>
   </data>
   <data name="DefaultError" xml:space="preserve">
-    <value>An unknown failure has occurred.</value>
+    <value>未知错误</value>
   </data>
   <data name="SendEmailFailure" xml:space="preserve">
-    <value>Send email failure by invoking Api</value>
+    <value>发送邮件失败</value>
   </data>
   <data name="SendSmsFailure" xml:space="preserve">
-    <value>Send SMS failure by invoking Api</value>
+    <value>发送短信失败</value>
   </data>
   <data name="TargetError" xml:space="preserve">
-    <value>Target client id and alias cannot be empty at the same</value>
+    <value>ClientId和Alias不能同时为空</value>
   </data>
 </root>

@@ -44,7 +44,7 @@ namespace Love.Net.ApiInvoker {
                 var value = new { Email = email, Subject = subject, Message = message };
                 var response = await http.PostAsJsonAsync(_options.SendEmailApi, value);
                 if (!response.IsSuccessStatusCode) {
-                    var invokeError = _errorDescriber.SendEmailFailure(_options.SendEmailApi);
+                    var invokeError = _errorDescriber.SendEmailFailure();
                     invokeError.Details = new [] {
                         new InvokeError {
                             Code = response.ReasonPhrase,
@@ -74,7 +74,7 @@ namespace Love.Net.ApiInvoker {
                 var value = new { PhoneNumber = phoneNumber, Message = message };
                 var response = await http.PostAsJsonAsync(_options.SendSmsApi, value);
                 if (!response.IsSuccessStatusCode) {
-                    var invokeError = _errorDescriber.SendSmsFailure(_options.SendSmsApi);
+                    var invokeError = _errorDescriber.SendSmsFailure();
                     invokeError.Details = new[] {
                         new InvokeError {
                             Code = response.ReasonPhrase,
@@ -105,7 +105,7 @@ namespace Love.Net.ApiInvoker {
                 var value = new { Template = template, PhoneNumber = phoneNumber, Parameters = parameters.ToDictionary() };
                 var response = await http.PostAsJsonAsync(_options.SendSmsApi, value);
                 if (!response.IsSuccessStatusCode) {
-                    var invokeError = _errorDescriber.SendSmsFailure(_options.SendSmsApi);
+                    var invokeError = _errorDescriber.SendSmsFailure();
                     invokeError.Details = new[] {
                         new InvokeError {
                             Code = response.ReasonPhrase,
@@ -135,7 +135,7 @@ namespace Love.Net.ApiInvoker {
                 }
                 var response = await http.PostAsync(_options.AppPushApi, GetHttpContent(appId, message));
                 if (!response.IsSuccessStatusCode) {
-                    var invokeError = _errorDescriber.AppPushFailure(_options.AppPushApi);
+                    var invokeError = _errorDescriber.AppPushFailure();
                     invokeError.Details = new[] {
                         new InvokeError {
                             Code = response.ReasonPhrase,
@@ -170,7 +170,7 @@ namespace Love.Net.ApiInvoker {
                 }
                 var response = await http.PostAsync(_options.AppPushApi, GetHttpContent(appId, message, targets));
                 if (!response.IsSuccessStatusCode) {
-                    var invokeError = _errorDescriber.AppPushFailure(_options.AppPushApi);
+                    var invokeError = _errorDescriber.AppPushFailure();
                     invokeError.Details = new[] {
                         new InvokeError {
                             Code = response.ReasonPhrase,

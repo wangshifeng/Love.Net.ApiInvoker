@@ -18,39 +18,40 @@ namespace Love.Net.ApiInvoker {
         /// <summary>
         /// Returns an <see cref="InvokeError"/> indicating the send email failure.
         /// </summary>
-        /// <param name="sendEmailApi">The send email API.</param>
         /// <returns>An <see cref="InvokeError"/> indicating the send email failure.</returns>
-        public virtual InvokeError SendEmailFailure(string sendEmailApi) {
+        public virtual InvokeError SendEmailFailure() {
             return new InvokeError {
                 Code = nameof(SendEmailFailure),
-                Message = string.Format(Resources.SendEmailFailure, sendEmailApi)
+                Message = Resources.SendEmailFailure
             };
         }
 
         /// <summary>
         /// Returns an <see cref="InvokeError"/> indicating the send SMS failure.
         /// </summary>
-        /// <param name="sendSmsApi">The send SMS API.</param>
         /// <returns>An <see cref="InvokeError"/> indicating the send SMS failure.</returns>
-        public virtual InvokeError SendSmsFailure(string sendSmsApi) {
+        public virtual InvokeError SendSmsFailure() {
             return new InvokeError {
                 Code = nameof(SendSmsFailure),
-                Message = string.Format(Resources.SendSmsFailure, sendSmsApi)
+                Message = Resources.SendSmsFailure
             };
         }
 
         /// <summary>
         /// Returns an <see cref="InvokeError"/> indicating the app push failure.
         /// </summary>
-        /// <param name="appPushApi">The app push API.</param>
         /// <returns>An <see cref="InvokeError"/> indicating the app push failure.</returns>
-        public virtual InvokeError AppPushFailure(string appPushApi) {
+        public virtual InvokeError AppPushFailure() {
             return new InvokeError {
                 Code = nameof(SendSmsFailure),
-                Message = string.Format(Resources.SendSmsFailure, appPushApi)
+                Message = Resources.AppPushFailure
             };
         }
 
+        /// <summary>
+        /// Returns an <see cref="InvokeError"/> indicating the <see cref="Target"/> is invalid.
+        /// </summary>
+        /// <returns>An <see cref="InvokeError"/> indicating the <see cref="Target"/> is invalid.</returns>
         public virtual InvokeError TargetError() {
             return new InvokeError {
                 Code = nameof(Target),
