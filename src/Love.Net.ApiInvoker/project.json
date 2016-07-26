@@ -38,8 +38,8 @@
     "NETStandard.Library": "1.6.0",
     "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
     "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
-    "Love.Net.Core": "0.0.1",
-    "Love.Net.Http": "1.0.0"
+    "Love.Net.Http": "1.0.0",
+    "Love.Net.Core": "1.0.0"
   },
 
   "frameworks": {
