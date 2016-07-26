@@ -6,7 +6,7 @@ To install Love.Net.ApiInvoker, run the following command in the Package Manager
 
 `PM> Install-Package Love.Net.ApiInvoker`
 
-# Configure services
+## Configure services
 
 ```C#
 public void ConfigureServices(IServiceCollection services) {
