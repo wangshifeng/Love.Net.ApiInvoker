@@ -1,0 +1,49 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "This library contains the default implementation for interfaces defined in Love.Net.Core by invoking RESTful API.",
+  "authors": [ "love.net", "rigofunc", "rigofunc@outlook.com" ],
+  "packOptions": {
+    "summary": "This library contains the default implementation for interfaces defined in Love.Net.Core by invoking RESTful API.",
+    "tags": [
+      "aspnetcore",
+      "push",
+      "notification",
+      "sms",
+      "email",
+      "webapi",
+      "aspnet"
+    ],
+    "owners": [
+      "love.net",
+      "rigofunc",
+      "rigofunc@outlook.com"
+    ],
+    "releaseNotes": "",
+    "licenseUrl": "https://github.com/lovedotnet/Love.Net.ApiInvoker/blob/master/LICENSE",
+    "projectUrl": "https://github.com/lovedotnet/Love.Net.ApiInvoker",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/lovedotnet/Love.Net.ApiInvoker.git"
+    }
+  },
+  "buildOptions": {
+    "optimize": true,
+    "nowarn": [
+      "CS1591"
+    ],
+    "xmlDoc": true,
+    "warningsAsErrors": true
+  },
+  "dependencies": {
+    "NETStandard.Library": "1.6.0",
+    "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
+    "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
+    "Love.Net.Core": "0.0.1",
+    "Love.Net.Http": "1.0.0"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+    }
+  }
+}
